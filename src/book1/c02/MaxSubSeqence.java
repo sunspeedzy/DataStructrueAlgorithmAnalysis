@@ -92,6 +92,7 @@ public class MaxSubSeqence {
 		
 		int tmpStartPos = -1;
 		int maxSum = 0, thisSum = 0;
+		startPos = 0;
 		for( int i=0; i<a.length; i++) {
 			thisSum += a[i];
 			
@@ -117,7 +118,7 @@ public class MaxSubSeqence {
 	}
 	
 	public static void main(String[] args) {
-		int[] a = {-8, -4, -3, 5, -2, -1, 2, 6, -2}; 
+		int[] a = {-8, 2, -3, 5, -2, -1, 2, 6, -2};
 		System.out.print("输入数组为：");
 		for (int b: a) {
 			System.out.print(b+" ");
